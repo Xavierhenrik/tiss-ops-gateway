@@ -1,15 +1,18 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/tissdb
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://172.23.37.74:5432/tiss_ops_gateway
+    username: henrique
+    password: testesql
   jpa:
     hibernate:
-      ddl-auto: validate
-    open-in-view: false
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
   flyway:
     enabled: true
-
-server:
-  port: 8080
-
+    # Usa as mesmas credenciais do datasource
+    user: henrique
+    password: testesql
