@@ -4,9 +4,15 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 @Entity
 @Table(name = "beneficiario")
 public class Beneficiario {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
