@@ -27,44 +27,4 @@ public class Beneficiario {
     @OneToMany(mappedBy = "beneficiario")
     private List<Guia> guias;
 
-    // Getters e Setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
-    public List<Guia> getGuias() {
-        return guias;
-    }
-
-    public void setGuias(List<Guia> guias) {
-        this.guias = guias;
-    }
 }
