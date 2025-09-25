@@ -1,0 +1,28 @@
+**
+!pom.xml
+!mvnw
+!mvnw.cmd
+!.mvn/**
+!src/**
+
+# Git e IDE
+.git
+.gitignore
+.github
+.idea
+.vscode
+*.iml
+
+# Builds e caches
+target
+build
+.gradle
+
+# SO / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Variáveis de ambiente
+.env
+.env.*
